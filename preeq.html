@@ -1,0 +1,76 @@
+<html>
+<body>
+ <div style="background-color:skyblue"> 
+<h1 align="center"><font color="red"><u>QUIZ APPLICATION</u></h1>
+<div><font color="purple">
+<b>1. PHP stands for</b>
+<br>
+<input type="radio" name="q1" value="1">Pre Processor Hypertext<br>
+<input type="radio" name="q1" value="2">Pre Processor<br>
+<input type="radio" name="q1" value="3">Hypertext PreProcessor<br>
+<input type="radio" name="q1" value="4">Hy Preprocessor<br><br>
+<b>2. HTML stands for</b>
+<br>
+<input type="radio" name="q2" value="1">Hyper Text Markup Language<br>
+<input type="radio" name="q2" value="2">Hy Text Mark Languge<br>
+<input type="radio" name="q2" value="3">HTM Language<br>
+<input type="radio" name="q2" value="4">Hyper Time Mark Language<br>
+<br>
+<b>3. FTP has </b>
+<br>
+<input type="radio" name="q3" value="1">2 ports<br>
+<input type="radio" name="q3" value="2">1 port<br>
+<input type="radio" name="q3" value="3">5 ports<br>
+<input type="radio" name="q3" value="4">10 ports<br>
+<br>
+<b>4. website is a collection of</b>
+<br>
+<input type="radio" name="q4" value="1">sites<br>
+<input type="radio" name="q4" value="2">webpages<br>
+<input type="radio" name="q4" value="3">frames<br>
+<input type="radio" name="q4" value="4">languages<br>
+<br>
+<b>5.operating system is a </b>
+<br>
+<input type="radio" name="q5" value="1">program<br>
+<input type="radio" name="q5" value="2">interface<br>
+<input type="radio" name="q5" value="3">software<br>
+<input type="radio" name="q5" value="4">application<br>
+<input type="submit" onclick="fun()" value="Submit">
+<br>
+<h2>Your score:</h2><p id="dis" style="color:tomato"></p>
+
+<script type="text/javascript">
+  function fun()
+  {  
+    var a
+    var c=0
+    a=[document.getElementsByName("q1"),document.getElementsByName("q2"),document.getElementsByName("q3"),document.getElementsByName("q4"),document.getElementsByName("q5")]
+    if(a[0][2].checked)
+    {
+        c=c+1
+    }
+    if(a[1][0].checked)
+    {
+        c=c+1
+    }
+    if(a[2][0].checked)
+    {
+        c=c+1
+    }
+    if(a[3][1].checked)
+    {
+        c=c+1
+    }
+    if(a[4][1].checked)
+    {
+        c=c+1
+    }
+    document.getElementById("dis").innerHTML=c
+}
+
+</script>
+</div>
+</div>
+</body>
+</html>
